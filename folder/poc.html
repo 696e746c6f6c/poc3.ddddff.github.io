@@ -1,19 +1,1 @@
-<html>
-<head>
-    <title>Open Settings</title>
-</head>
-<body>
-    <button id="openSettingsBtn">Open Settings</button>
-    <button id="openWiFiSettingsBtn">Open WiFi</button>
 
-    <script>
-        document.getElementById("openSettingsBtn").addEventListener("click", function() {
-            window.location.href = "intent://settings#Intent;scheme=android;package=com.android.settings;end";
-        });
-
-        document.getElementById("openWiFiSettingsBtn").addEventListener("click", function() {
-            window.location.href = "intent://wifi#Intent;scheme=android;package=com.android.settings;end";
-        });
-    </script>
-</body>
-</html>
